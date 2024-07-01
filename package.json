@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/emergentmethods/flowdapt-typescript-sdk.git"
   },
-  "homepage": "https://docs.asknews.app",
+  "homepage": "https://docs.flowdapt.ai",
   "keywords": [
     "machine learning",
     "cluster orchestration",
