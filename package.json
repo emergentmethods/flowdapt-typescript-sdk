@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emergentmethods/flowdapt-ts-sdk.git"
+    "url": "git+https://github.com/emergentmethods/flowdapt-typescript-sdk.git"
   },
   "homepage": "https://docs.asknews.app",
   "keywords": [
@@ -17,7 +17,7 @@
     "scheduling",
     "resource management"
   ],
-  "bugs": "https://github.com/emergentmethods/flowdapt-ts-sdk/issues",
+  "bugs": "https://github.com/emergentmethods/flowdapt-typescript-sdk/issues",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -46,7 +46,7 @@
     "fix": "eslint . --fix --ignore-pattern dist/",
     "format": "prettier --write \"**/*.ts\"",
     "compile": "tsc",
-    "prepare": "husky || true",
+    "prepare": "husky",
     "genversion": "genversion -ef src/version.ts",
     "prepack": "npm run genversion && npm run compile",
     "postversion": "npm run genversion"
