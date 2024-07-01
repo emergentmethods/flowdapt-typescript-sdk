@@ -32,7 +32,9 @@
     "format": "prettier --write \"**/*.ts\"",
     "compile": "tsc",
     "prepare": "husky || true",
-    "prepack": "genversion -ef src/version.ts && tsc"
+    "genversion": "genversion -ef src/version.ts",
+    "prepack": "npm run genversion && npm run compile",
+    "postversion": "npm run genversion"
   },
   "dependencies": {
     "zod": "^3.22.4"
@@ -77,7 +79,7 @@
             "package.json",
             "package-lock.json"
           ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]"
+          "message": "chore(release): Release ${nextRelease.version} [skip ci]"
         }
       ]
     ]
