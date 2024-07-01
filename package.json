@@ -2,7 +2,22 @@
   "name": "@emergentmethods/flowdapt-ts-sdk",
   "version": "1.0.3",
   "description": "Rest API Client for Flowdapt",
-  "author": "Emergent Methods, LLC",
+  "author": "Emergent Methods <contact@emergentmethods.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emergentmethods/flowdapt-ts-sdk.git"
+  },
+  "homepage": "https://docs.asknews.app",
+  "keywords": [
+    "machine learning",
+    "cluster orchestration",
+    "workflow",
+    "workflow configuration",
+    "scheduling",
+    "resource management"
+  ],
+  "bugs": "https://github.com/emergentmethods/flowdapt-ts-sdk/issues",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
