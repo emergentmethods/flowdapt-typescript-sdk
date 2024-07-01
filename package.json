@@ -1,6 +1,6 @@
 {
   "name": "@emergentmethods/flowdapt-ts-sdk",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Rest API Client for Flowdapt",
   "author": "Emergent Methods, LLC",
   "type": "module",
