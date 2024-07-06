@@ -33,7 +33,7 @@ export type V1Alpha1TriggerRuleResourceSpec = z.infer<
   typeof V1Alpha1TriggerRuleResourceSpecSchema
 >
 
-export const V1Alpha1TriggerRuleResourceKindSchema = z.literal('trigger')
+export const V1Alpha1TriggerRuleResourceKindSchema = z.literal('trigger_rule')
 /**
  * V1Alpha1TriggerResourceKind is a type for the kind of a trigger resource.
  * The kind of a trigger resource is always 'trigger'.
@@ -55,7 +55,7 @@ export type V1Alpha1TriggerRuleResourceCreateRequest = z.infer<
 >
 
 export const V1Alpha1TriggerRuleResourceCreateResponseSchema = z.object({
-  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger'),
+  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger_rule'),
   metadata: V1Alpha1ResourceMetadataSchema,
   spec: V1Alpha1TriggerRuleResourceSpecSchema,
 })
@@ -67,7 +67,7 @@ export type V1Alpha1TriggerRuleResourceCreateResponse = z.infer<
 >
 
 export const V1Alpha1TriggerRuleResourceReadResponseSchema = z.object({
-  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger'),
+  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger_rule'),
   metadata: V1Alpha1ResourceMetadataSchema,
   spec: V1Alpha1TriggerRuleResourceSpecSchema,
 })
@@ -91,7 +91,7 @@ export type V1Alpha1TriggerRuleResourceUpdateRequest = z.infer<
 >
 
 export const V1Alpha1TriggerRuleResourceUpdateResponseSchema = z.object({
-  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger'),
+  kind: V1Alpha1TriggerRuleResourceKindSchema.default('trigger_rule'),
   metadata: V1Alpha1ResourceMetadataSchema,
   spec: V1Alpha1TriggerRuleResourceSpecSchema,
 })
