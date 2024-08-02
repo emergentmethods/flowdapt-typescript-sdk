@@ -47,7 +47,7 @@ export const V1Alpha1WorkflowRunSchema = z.object({
   finished_at: z.optional(z.coerce.date()),
   result: z.any(),
   state: z.enum(['pending', 'running', 'finished', 'failed']),
-  source: z.string().optional(),
+  source: z.string().optional().nullable(),
 })
 export type V1Alpha1WorkflowRun = z.infer<typeof V1Alpha1WorkflowRunSchema>
 
@@ -119,7 +119,7 @@ export const V1Alpha1WorkflowRunReadResponseSchema = z.object({
   finished_at: z.optional(z.coerce.date()),
   result: z.any(),
   state: z.enum(['pending', 'running', 'finished', 'failed']),
-  source: z.string().optional(),
+  source: z.string().optional().nullable(),
 })
 /**
  * V1Alpha1WorkflowRunReadResponse is a type for a response to a read request for a workflow run.
