@@ -1,6 +1,6 @@
 {
   "name": "@emergentmethods/flowdapt-ts-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Rest API Client for Flowdapt",
   "author": "Emergent Methods <contact@emergentmethods.ai>",
   "license": "MIT",
