@@ -3,7 +3,7 @@ import { DTO, Json } from '../types.js'
 
 export const V1Alpha1MetricsBucketValueSchema = z.object({
   attributes: z.record(z.any()),
-  start_time_unix_nano: z.number(),
+  start_time_unix_nano: z.number().nullable(),
   time_unix_nano: z.number(),
   count: z.number(),
   bucket_counts: z.array(z.number()),
@@ -21,7 +21,7 @@ export type V1Alpha1MetricsBucketValue = z.infer<
 
 export const V1Alpha1MetricsCountValueSchema = z.object({
   attributes: z.record(z.any()),
-  start_time_unix_nano: z.number(),
+  start_time_unix_nano: z.number().nullable(),
   time_unix_nano: z.number(),
   value: z.number(),
 })
